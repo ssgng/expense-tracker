@@ -23,7 +23,7 @@ export default function Home() {
   const addItem = async (e) => {
     e.preventDefault();
     
-    if (newItem.name === '' && newItem.price === "" ) {
+    if (newItem.name === '' || newItem.price === "" || newItem.price === "0"  ) {
      alert("You cant leave the expenses section or fee section blank ")
     } else{
       // setItems([...items, newItem]);
