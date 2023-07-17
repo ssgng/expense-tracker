@@ -101,14 +101,14 @@ export default function Home() {
                 className='my-4 w-full flex justify-between bg-slate-950'
               >
                 
-                <div className='p-4 w-full flex justify-between'>
+                <div className='p-4 w-full flex justify-between text-white'>
                   <span className='capitalize'>{item.name}</span>
                   <span>{item.price}€</span>
                 </div>
             
                 <button
                   onClick={() => deleteItem(item.id)}
-                  className='ml-8 p-4 border-l-2 border-slate-900 hover:bg-slate-900 w-16'
+                  className='ml-8 p-4 border-l-2 border-slate-900 hover:bg-slate-900 w-16 text-white'
                 >
                   X
                 </button>
@@ -118,7 +118,7 @@ export default function Home() {
           {items.length < 1 ? (
             ''
           ) : (
-            <div className='flex justify-between p-3'>
+            <div className='flex justify-between p-3 text-white'>
               <span>Total</span>
               <span>{total}€</span>
             </div>
